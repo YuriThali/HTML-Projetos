@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+   <head>
+    <title>Cadastro de Usúario</title>
+    <h1>Cadastro de Usúario</h1>
+   </head>
+   <body>
+    <header>
+        <nav>
+            <section>
+                <ul>
+                    <li><a href=pages/princ.html title="Princ" target="_blank">Página Principal</a></li>
+                    <li><a href=pages/mim.html title="Sobremim" target="_blank">Sobre mim</a></li>
+                    <li><a href=pages/projetos.html title="Projetos" target="_blank">Meus Projetos</a></li>
+                    <li><a href=pages/contato.html title="Sobremim" target="_blank">Contatos</a></li>
+                </ul>
+            </section>
+            <section>
+                <h2>Formulário de Cadastro.</h2>
+                <form action="/enviar_dados" method="post">
+                    <label for="NomeCompleto">Nome Completo: </label>
+                    <input type="text" id="NomeCompleto" name="NomeCompleto" required><br><br>
+                    
+                    <label for="email">Email: </label>
+                    <input type="email" id="email" name="email" required><br><br>
+                    
+                    <label for="password">Senha: </label>
+                    <input type="password" id="password" name="password" required><br><br>
+
+                    <label for="genero">Gênero: </label>
+                    <select id="genero" name="genero">
+                        <option value="Feminino">Feminino</option>
+                        <option value="Masculino">Masculino</option>
+                        <option value="Naob">Não-Binário</option>
+                        <option value="outro">Outro</option>
+                        </select><br><br>
+                    
+                    <p>Interesses: </p>
+                    <label for="checkbox">Programação</label>
+                    <input type="checkbox" id="checkbox" name="checkbox" required><br><br>
+                    <label for="Escolha">Desing</label>
+                    <input type="checkbox" id="checkbox" name="checkbox" required><br><br>
+                    <label for="Escolha">Música</label>
+                    <input type="checkbox" id="checkbox" name="checkbox" required><br><br>
+    
+                    </select><br><br>
+                    
+                    <label for="biografia">biografia: </label>
+                    <textarea id="biografia" name="biografia" rows="4" cols="30"></textarea><br><br>
+                    <input type="submit" id="Enviar">
+                </form>
+            </section>
+            
+        </nav>
+    </header>
+
+   </body>
+
+   <footer>&copy 2024 Meus Site Oficial</footer>
+</html>
